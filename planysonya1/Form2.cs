@@ -34,13 +34,27 @@ namespace planysonya1
 
         private void SaveprojectButton_Click_1(object sender, EventArgs e)
         {
-            Project.Name = Name.Text;
+            /* Project.Name = textBox1.Text;
             Project.Tasks.Clear();
             foreach (string task in checkedListBox1.CheckedItems)
             {
                 Project.Tasks.Add(task);
             }
-            this.Close(); 
+            this.Close(); */
+
+            
+            Project project = new Project();
+            project.Name = TextBox1.Text;
+            project.Description = TextBox2.Text;
+            //сохранение
+
+            Form1 form1 = Application.OpenForms.OfType<Form1>().FirstOrDefault();
+
+            if (form1 != null)
+            {
+                form1.AddProjectToList(project);
+            }
+            this.Close();
         }
 
         private void SavetaskButton_Click_1(object sender, EventArgs e)
@@ -61,6 +75,16 @@ namespace planysonya1
         {
             Project = null;
             this.Close();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            //name
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            //description
         }
     }
 }
