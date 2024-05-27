@@ -26,7 +26,13 @@ namespace planysonya1
         {
             InitializeComponent();
         }
-        private void SaveprojectButton_Click(object sender, EventArgs e)
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SaveprojectButton_Click_1(object sender, EventArgs e)
         {
             Project.Name = Name.Text;
             Project.Tasks.Clear();
@@ -34,10 +40,16 @@ namespace planysonya1
             {
                 Project.Tasks.Add(task);
             }
-            this.Close();
+            this.Close(); 
         }
 
-        private void DeletetaskButton_Click(object sender, EventArgs e)
+        private void SavetaskButton_Click_1(object sender, EventArgs e)
+        {
+            checkedListBox1.Items.Add(Task.Text, true);
+            Task.Clear();
+        }
+
+        private void DeletetaskButton_Click_1(object sender, EventArgs e)
         {
             if (checkedListBox1.SelectedIndex != -1)
             {
@@ -45,26 +57,15 @@ namespace planysonya1
             }
         }
 
-        private void SavetaskButton_Click(object sender, EventArgs e) 
-        {
-            checkedListBox1.Items.Add(Task.Text, true);
-            Task.Clear();
-        }
-
-        private void DeleteprojectButton_Click(object sender, EventArgs e) 
+        private void DeleteprojectButton_Click(object sender, EventArgs e)
         {
             Project = null;
             this.Close();
         }
-
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
-    
-    
 
-        
-   
+
+
+
+
