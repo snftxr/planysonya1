@@ -40,74 +40,86 @@
             // checkedListBox1
             // 
             checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Location = new Point(57, 277);
+            checkedListBox1.Location = new Point(20, 87);
+            checkedListBox1.Margin = new Padding(1, 1, 1, 1);
             checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(361, 220);
+            checkedListBox1.Size = new Size(129, 58);
             checkedListBox1.TabIndex = 0;
             checkedListBox1.SelectedIndexChanged += checkedListBox1_SelectedIndexChanged;
             // 
             // SaveprojectButton
             // 
-            SaveprojectButton.Location = new Point(57, 503);
+            SaveprojectButton.BackColor = Color.FromArgb(192, 255, 255);
+            SaveprojectButton.Location = new Point(20, 157);
+            SaveprojectButton.Margin = new Padding(1, 1, 1, 1);
             SaveprojectButton.Name = "SaveprojectButton";
-            SaveprojectButton.Size = new Size(226, 70);
+            SaveprojectButton.Size = new Size(129, 30);
             SaveprojectButton.TabIndex = 1;
-            SaveprojectButton.Text = "button1";
-            SaveprojectButton.UseVisualStyleBackColor = true;
+            SaveprojectButton.Text = "сохранить проект";
+            SaveprojectButton.UseVisualStyleBackColor = false;
             SaveprojectButton.Click += SaveprojectButton_Click_1;
             // 
             // DeleteprojectButton
             // 
-            DeleteprojectButton.Location = new Point(335, 503);
+            DeleteprojectButton.BackColor = Color.FromArgb(192, 255, 255);
+            DeleteprojectButton.Location = new Point(151, 157);
+            DeleteprojectButton.Margin = new Padding(1, 1, 1, 1);
             DeleteprojectButton.Name = "DeleteprojectButton";
-            DeleteprojectButton.Size = new Size(226, 70);
+            DeleteprojectButton.Size = new Size(129, 30);
             DeleteprojectButton.TabIndex = 2;
-            DeleteprojectButton.Text = "button2";
-            DeleteprojectButton.UseVisualStyleBackColor = true;
+            DeleteprojectButton.Text = "удалить проект";
+            DeleteprojectButton.UseVisualStyleBackColor = false;
             DeleteprojectButton.Click += DeleteprojectButton_Click;
             // 
             // DeletetaskButton
             // 
-            DeletetaskButton.Location = new Point(57, 604);
+            DeletetaskButton.BackColor = Color.FromArgb(192, 255, 255);
+            DeletetaskButton.Location = new Point(20, 189);
+            DeletetaskButton.Margin = new Padding(1, 1, 1, 1);
             DeletetaskButton.Name = "DeletetaskButton";
-            DeletetaskButton.Size = new Size(226, 70);
+            DeletetaskButton.Size = new Size(129, 30);
             DeletetaskButton.TabIndex = 3;
-            DeletetaskButton.Text = "button3";
-            DeletetaskButton.UseVisualStyleBackColor = true;
+            DeletetaskButton.Text = "удалить задачу";
+            DeletetaskButton.UseVisualStyleBackColor = false;
             DeletetaskButton.Click += DeletetaskButton_Click_1;
             // 
             // SavetaskButton
             // 
-            SavetaskButton.Location = new Point(335, 604);
+            SavetaskButton.BackColor = Color.FromArgb(192, 255, 255);
+            SavetaskButton.Location = new Point(151, 189);
+            SavetaskButton.Margin = new Padding(1, 1, 1, 1);
             SavetaskButton.Name = "SavetaskButton";
-            SavetaskButton.Size = new Size(226, 70);
+            SavetaskButton.Size = new Size(129, 30);
             SavetaskButton.TabIndex = 4;
-            SavetaskButton.Text = "button4";
-            SavetaskButton.UseVisualStyleBackColor = true;
+            SavetaskButton.Text = "сохранить задачу";
+            SavetaskButton.UseVisualStyleBackColor = false;
             SavetaskButton.Click += SavetaskButton_Click_1;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(57, 34);
+            textBox1.Location = new Point(20, 11);
+            textBox1.Margin = new Padding(1, 1, 1, 1);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(300, 55);
+            textBox1.Size = new Size(108, 23);
             textBox1.TabIndex = 5;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(57, 116);
+            textBox2.Location = new Point(20, 36);
+            textBox2.Margin = new Padding(1, 1, 1, 1);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(504, 134);
+            textBox2.Size = new Size(179, 45);
             textBox2.TabIndex = 6;
             textBox2.TextChanged += textBox2_TextChanged;
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(20F, 48F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1863, 704);
+            BackColor = Color.FromArgb(192, 192, 255);
+            ClientSize = new Size(673, 228);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(SavetaskButton);
@@ -115,6 +127,7 @@
             Controls.Add(DeleteprojectButton);
             Controls.Add(SaveprojectButton);
             Controls.Add(checkedListBox1);
+            Margin = new Padding(1, 1, 1, 1);
             Name = "Form2";
             Text = "Form2";
             ResumeLayout(false);

@@ -23,7 +23,7 @@ namespace planysonya1
             get; private set; 
             
         }
-        public string Description { get; set; }
+        //public string Description { get; set; }
         public Project()
         {
             Tasks = new List<Task>();
@@ -41,6 +41,7 @@ namespace planysonya1
             Name = name;
             Tasks = new List<Task>();
         }
+        
 
         //public Project()
         //{}
@@ -73,6 +74,15 @@ namespace planysonya1
     internal class TextBox2
     {
         public static string Text { get; internal set; }
+
+        internal static void Clear()
+        {
+            throw new NotImplementedException();
+        }
+        /* public void ClearTextBox2()
+{
+   TextBox2.Clear();
+} */
     }
 
     /* public class ProjectManager 

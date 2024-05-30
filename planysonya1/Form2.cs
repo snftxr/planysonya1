@@ -42,10 +42,10 @@ namespace planysonya1
             }
             this.Close(); */
 
-            
+
             Project project = new Project();
             project.Name = TextBox1.Text;
-            project.Description = TextBox2.Text;
+            //project.Description = TextBox2.Text;
             //сохранение
 
             Form1 form1 = Application.OpenForms.OfType<Form1>().FirstOrDefault();
@@ -59,8 +59,15 @@ namespace planysonya1
 
         private void SavetaskButton_Click_1(object sender, EventArgs e)
         {
-            checkedListBox1.Items.Add(Task.Text, true);
-            Task.Clear();
+            //checkedListBox1.Items.Add(Task.Text, true);
+            //Task.Clear();
+
+            string task = TextBox2.Text;
+            if (!string.IsNullOrEmpty(task))
+            {
+                checkedListBox1.Items.Add(task);
+                TextBox2.Clear();
+            }
         }
 
         private void DeletetaskButton_Click_1(object sender, EventArgs e)
@@ -84,9 +91,11 @@ namespace planysonya1
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            //description
+            //задача
         }
     }
+    //private System.Windows.Forms.TextBox? TextBox2;
+
 }
 
 
